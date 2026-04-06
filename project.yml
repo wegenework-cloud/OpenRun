@@ -1,0 +1,33 @@
+name: OpenRun
+options:
+  minimumXcodeGenVersion: 2.45.0
+configs:
+  Debug: debug
+  Release: release
+targets:
+  OpenRunIOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: apps/ios/OpenRunApp
+        excludes:
+          - Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_NAME: OpenRun
+        PRODUCT_BUNDLE_IDENTIFIER: com.openrun.ios
+        SWIFT_VERSION: 5.0
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 0.1.0
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: apps/ios/OpenRunApp/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+schemes:
+  OpenRunIOS:
+    build:
+      targets:
+        OpenRunIOS: all
