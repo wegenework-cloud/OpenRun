@@ -22,8 +22,9 @@ targets:
         MARKETING_VERSION: 0.1.0
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: apps/ios/OpenRunApp/Info.plist
+        CODE_SIGN_ENTITLEMENTS: apps/ios/OpenRunApp/OpenRunIOS.entitlements
         CODE_SIGN_STYLE: Automatic
-        DEVELOPMENT_TEAM: ""
+        DEVELOPMENT_TEAM: MFZV7KWHC7
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MACCATALYST: NO
 schemes:

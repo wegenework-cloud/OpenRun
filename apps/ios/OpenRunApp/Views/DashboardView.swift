@@ -38,8 +38,8 @@ struct DashboardView: View {
                 Image(systemName: "iphone")
                 Text("Primary surface now")
                 Spacer()
-                Image(systemName: "applewatch")
-                Text("Watch companion next")
+                Image(systemName: "chart.line.uptrend.xyaxis")
+                Text("12-month running analysis live")
             }
             .font(.footnote.weight(.semibold))
             .padding(12)
@@ -135,13 +135,21 @@ struct DashboardView: View {
                     .foregroundStyle(.secondary)
 
                 if healthBridge.availability == .available {
-                    Button("Request Apple Health access") {
-                        Task {
-                            await healthBridge.requestAuthorization()
+                    HStack(spacing: 12) {
+                        Button("Request Apple Health access") {
+                            Task {
+                                await healthBridge.requestAuthorization()
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(.orange)
+
+                        if !store.runningHistory.isEmpty {
+                            Text("\(store.runningHistory.count) runs synced")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(.secondary)
                         }
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.orange)
                 }
             }
         }

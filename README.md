@@ -20,7 +20,8 @@ The repository now includes a SwiftUI iOS starter app in `apps/ios/OpenRunApp` p
 
 The current repository includes:
 
-- a React + TypeScript starter app that demonstrates the core product surfaces
+- a React + TypeScript local-first web workspace for activity logging, meals, check-ins, CSV import, and JSON backup/restore
+- a running performance lab with local workout signal snapshots, climate-aware condition modeling, and higher-is-better derived metrics
 - a domain model for activities, goals, recovery, nutrition, and AI insights
 - an architecture document for the first build phases
 
@@ -61,3 +62,5 @@ xcodebuild -project OpenRun.xcodeproj -scheme OpenRunIOS -destination "generic/p
 
 See [docs/architecture.md](docs/architecture.md) for the first-pass product and technical design.
 See [docs/local-first-privacy.md](docs/local-first-privacy.md) for the privacy and integration strategy.
+See [docs/deployment-plan.md](docs/deployment-plan.md) for the current deployment sequence and blockers.
+See [docs/performance-metrics.md](docs/performance-metrics.md) for the metric definitions and extension path.

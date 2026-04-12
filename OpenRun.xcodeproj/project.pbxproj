@@ -12,8 +12,11 @@
 		6A29BB15FAD74B413CB977FD /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1419D12FE3A81FB07E2F37F /* DashboardView.swift */; };
 		88215AD6AB09884007BE966C /* AppleHealthBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE94E33478DD1258818F39 /* AppleHealthBridge.swift */; };
 		A8C4ADB44ACA37614034A5A6 /* OpenRunStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BAB7EC20F8AEAAD37AC4F7 /* OpenRunStore.swift */; };
+		B01C34ADA86C5FA6E2B5A416 /* RunningAnalysisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB0FF4090DADBD1D037EAD9 /* RunningAnalysisEngine.swift */; };
 		B4F4C836797982600C634957 /* OpenRunModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E297C051C4439F1AE82930 /* OpenRunModels.swift */; };
 		C319A94F2646EBE2D4645877 /* OpenRunRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147712CC032F2C3F8EFCCECF /* OpenRunRootView.swift */; };
+		DB16BECEBB3AE13BA1874CA1 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B58D3E201E89F96BE9E08E1 /* AnalysisView.swift */; };
+		F37E81659CB7F17C97600CEF /* RunningHistoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48F1D7D1E954CEE718C4C4 /* RunningHistoryModels.swift */; };
 		FF585482ECCCA911858DF68D /* OpenRunIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B1A2DAE2DF6ADC60BAA65 /* OpenRunIOSApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +26,15 @@
 		147712CC032F2C3F8EFCCECF /* OpenRunRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRunRootView.swift; sourceTree = "<group>"; };
 		2F319A496587A155FB75DD01 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		31BAB7EC20F8AEAAD37AC4F7 /* OpenRunStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRunStore.swift; sourceTree = "<group>"; };
+		3CB0FF4090DADBD1D037EAD9 /* RunningAnalysisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAnalysisEngine.swift; sourceTree = "<group>"; };
 		477A2464E8FD168820A8C909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		614C0E8C4A32BC1C2693EBBB /* OpenRunIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenRunIOS.entitlements; sourceTree = "<group>"; };
+		9B58D3E201E89F96BE9E08E1 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 		A046127B352CA360EBC63A19 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 		C1419D12FE3A81FB07E2F37F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DCAE94E33478DD1258818F39 /* AppleHealthBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHealthBridge.swift; sourceTree = "<group>"; };
-		FBAAD78A56915F345F981429 /* OpenRunIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OpenRunIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA48F1D7D1E954CEE718C4C4 /* RunningHistoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningHistoryModels.swift; sourceTree = "<group>"; };
+		FBAAD78A56915F345F981429 /* OpenRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -35,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				10E297C051C4439F1AE82930 /* OpenRunModels.swift */,
+				EA48F1D7D1E954CEE718C4C4 /* RunningHistoryModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -43,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				477A2464E8FD168820A8C909 /* Info.plist */,
+				614C0E8C4A32BC1C2693EBBB /* OpenRunIOS.entitlements */,
 				0B0B1A2DAE2DF6ADC60BAA65 /* OpenRunIOSApp.swift */,
 				147712CC032F2C3F8EFCCECF /* OpenRunRootView.swift */,
 				162B0683A9A413806981A08A /* Models */,
@@ -56,6 +65,7 @@
 		6749DF44BC6FC9D734BB00C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B58D3E201E89F96BE9E08E1 /* AnalysisView.swift */,
 				C1419D12FE3A81FB07E2F37F /* DashboardView.swift */,
 				A046127B352CA360EBC63A19 /* PlanView.swift */,
 				2F319A496587A155FB75DD01 /* PrivacyView.swift */,
@@ -66,7 +76,7 @@
 		90F0017DDEDE042AB219AFDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBAAD78A56915F345F981429 /* OpenRunIOS.app */,
+				FBAAD78A56915F345F981429 /* OpenRun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,15 +94,9 @@
 			children = (
 				DCAE94E33478DD1258818F39 /* AppleHealthBridge.swift */,
 				31BAB7EC20F8AEAAD37AC4F7 /* OpenRunStore.swift */,
+				3CB0FF4090DADBD1D037EAD9 /* RunningAnalysisEngine.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		"TEMP_F8D85894-278F-4ED8-A0B5-2E4B8555EA9F" /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +116,7 @@
 			packageProductDependencies = (
 			);
 			productName = OpenRunIOS;
-			productReference = FBAAD78A56915F345F981429 /* OpenRunIOS.app */;
+			productReference = FBAAD78A56915F345F981429 /* OpenRun.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +129,6 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2BED12D0960076F48622AB62 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB16BECEBB3AE13BA1874CA1 /* AnalysisView.swift in Sources */,
 				88215AD6AB09884007BE966C /* AppleHealthBridge.swift in Sources */,
 				6A29BB15FAD74B413CB977FD /* DashboardView.swift in Sources */,
 				FF585482ECCCA911858DF68D /* OpenRunIOSApp.swift in Sources */,
@@ -162,6 +166,8 @@
 				A8C4ADB44ACA37614034A5A6 /* OpenRunStore.swift in Sources */,
 				0CB07E207E2C406489E0040A /* PlanView.swift in Sources */,
 				59B8262B18F77D66274AA241 /* PrivacyView.swift in Sources */,
+				B01C34ADA86C5FA6E2B5A416 /* RunningAnalysisEngine.swift in Sources */,
+				F37E81659CB7F17C97600CEF /* RunningHistoryModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +295,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = apps/ios/OpenRunApp/OpenRunIOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PD23XYU8UH;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = apps/ios/OpenRunApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -314,10 +321,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = apps/ios/OpenRunApp/OpenRunIOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PD23XYU8UH;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = apps/ios/OpenRunApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

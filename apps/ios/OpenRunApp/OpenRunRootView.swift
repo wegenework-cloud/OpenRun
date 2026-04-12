@@ -11,6 +11,11 @@ struct OpenRunRootView: View {
                     Label("Home", systemImage: "figure.run")
                 }
 
+            AnalysisView(store: store, healthBridge: healthBridge)
+                .tabItem {
+                    Label("Analysis", systemImage: "chart.line.uptrend.xyaxis")
+                }
+
             PlanView(store: store)
                 .tabItem {
                     Label("Plan", systemImage: "calendar.badge.clock")

@@ -90,8 +90,8 @@ enum DemoData {
         ImportSourceCard(
             title: "Apple Health export",
             status: .ready,
-            detail: "Support manual Health export intake immediately while the direct HealthKit bridge is being finished.",
-            privacyMode: "User-imported bundle"
+            detail: "Import the last 12 months of running workouts directly on device, then keep the derived history table local.",
+            privacyMode: "On-device HealthKit read"
         ),
         ImportSourceCard(
             title: "Strava sync or export",
@@ -121,11 +121,11 @@ enum DemoData {
         GoalCard(
             title: "Keep the data private",
             status: .onTrack,
-            metric: "Local-first storage with explicit outbound policy",
+            metric: "Local-first storage with HealthKit import and explicit outbound policy",
             blockers: [
-                "Direct Apple Health access still needs entitlement wiring and device testing"
+                "Watch companion and richer climate normalization still need follow-up work"
             ],
-            nextAction: "Build the HealthKit bridge inside the iOS app, then share only derived AI payloads."
+            nextAction: "Keep the import and analysis local, then share only derived summaries if an AI endpoint is enabled later."
         )
     ]
 
